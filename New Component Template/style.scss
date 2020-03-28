@@ -1,0 +1,19 @@
+/*=== Fonts ===*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); // Open Sans
+
+
+/*=== Global ===*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1em;
+}
+
+/*=== Components ===*/
+.c-component {
+    border: 1px solid black;
+}

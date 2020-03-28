@@ -1,0 +1,113 @@
+/*=== Fonts ===*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+/*=== Global ===*/
+html, body {
+  margin: 0;
+  padding: 0; }
+
+body, textarea {
+  font-family: 'Open Sans', sans-serif; }
+
+body {
+  font-size: 16px;
+  line-height: 1em; }
+
+/*=== Variables ===*/
+/*=== Objects ===*/
+.o-button {
+  outline: none;
+  padding: 15px;
+  text-transform: uppercase;
+  color: #9aecdb;
+  letter-spacing: 2px;
+  background: transparent;
+  border: 1px solid #9aecdb; }
+  .o-button:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background: #9aecdb;
+    transition: 0.1s all; }
+
+.o-radio-group__radio {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  /* Hide the browser's default radio button */
+  /* Hover styles */
+  /*
+            &:hover input~&-input {
+                border: 2px solid $primary-color-hover;
+            }
+        */ }
+  .o-radio-group__radio input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0; }
+  .o-radio-group__radio-label {
+    font-size: 1em; }
+  .o-radio-group__radio-input {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: dimgray;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    transition: 0.1s border, 0.1s color; }
+  input[type="radio"]:checked ~ .o-radio-group__radio-input {
+    color: #9aecdb;
+    border: 2px solid #9aecdb;
+    transition: 0.1s border, 0.1s color; }
+
+/*=== Components ===*/
+.c-booking-enquiry {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 100px; }
+  .c-booking-enquiry__form {
+    position: relative;
+    margin: 0 20px; }
+    .c-booking-enquiry__form-row {
+      display: flex;
+      flex-direction: row;
+      width: calc(100% + 2 * 15px);
+      margin: 0 -15px; }
+      .c-booking-enquiry__form-row-field {
+        flex: 1;
+        margin: 0 15px; }
+    .c-booking-enquiry__form-label {
+      display: block;
+      margin-bottom: 15px;
+      padding-left: 5px;
+      font-weight: bold; }
+    .c-booking-enquiry__form-field {
+      width: 100%; }
+    .c-booking-enquiry__form-input {
+      outline: none;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 18px;
+      margin-bottom: 25px;
+      border-radius: 5px;
+      border: 1px solid lightgray; }
+      .c-booking-enquiry__form-input::placeholder {
+        color: #000000; }
+      .c-booking-enquiry__form-input:disabled {
+        background: #efefef; }
+    .c-booking-enquiry__form-textarea {
+      resize: vertical; }
+    .c-booking-enquiry__form-submit {
+      width: 100%; }

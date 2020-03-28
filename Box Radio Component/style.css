@@ -1,0 +1,60 @@
+/*=== Fonts ===*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+/*=== Global ===*/
+html, body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1em; }
+
+/*=== Variables ===*/
+/*=== Components ===*/
+.c-radio-group {
+  max-width: 500px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 3px; }
+  .c-radio-group__radio {
+    flex: 1;
+    /* Hide the browser's default radio button */
+    /* Hover Styles */
+    /*
+            &:hover input~&-input {
+                border: 2px solid $primary-color-hover;
+            }
+        */ }
+    .c-radio-group__radio input {
+      cursor: pointer;
+      position: absolute;
+      opacity: 0;
+      height: 0;
+      width: 0; }
+    .c-radio-group__radio-input {
+      cursor: pointer; }
+    .c-radio-group__radio-label {
+      padding: 18px; }
+    input ~ .c-radio-group__radio-input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -1px;
+      margin-right: -1px;
+      border: 2px solid lightgray; }
+    input:checked ~ .c-radio-group__radio-input {
+      position: relative;
+      z-index: 1;
+      border-top: 2px solid #9aecdb;
+      border-bottom: 2px solid #9aecdb; }
+    .c-radio-group__radio:first-child input ~ .c-radio-group__radio-input {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px; }
+    .c-radio-group__radio:last-child input ~ .c-radio-group__radio-input {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px; }
+    input:checked ~ .c-radio-group__radio-input {
+      z-index: 1;
+      border: 2px solid #9aecdb; }

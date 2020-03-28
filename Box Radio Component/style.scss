@@ -1,0 +1,81 @@
+/*=== Fonts ===*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); // Open Sans
+
+
+/*=== Global ===*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1em;
+}
+
+
+/*=== Variables ===*/
+$primary-color: rgba(154, 236, 219, 1.0);
+$primary-color-hover: rgba(154, 236, 219, 0.5);
+
+
+/*=== Components ===*/
+.c-radio-group {
+    max-width: 500px;
+    margin: 20px;
+
+    display: flex;
+    flex-direction: row;
+    border-radius: 3px;
+
+    &__radio {
+        flex: 1;
+
+        /* Hide the browser's default radio button */
+        input {
+            cursor: pointer;
+            position: absolute;
+            opacity: 0;
+            height: 0;
+            width: 0;
+        }
+        &-input {
+            cursor: pointer;
+        }
+        /* Hover Styles */
+        /*
+            &:hover input~&-input {
+                border: 2px solid $primary-color-hover;
+            }
+        */
+        &-label {
+            padding: 18px;
+        }
+        input ~ &-input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -1px;
+            margin-right: -1px;
+            border: 2px solid lightgray;
+        }
+        input:checked ~ &-input {
+            position: relative;
+            z-index: 1;
+            border-top: 2px solid $primary-color;
+            border-bottom: 2px solid $primary-color;
+        }
+        &:first-child input ~ &-input {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        &:last-child input ~ &-input {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        input:checked ~ &-input {
+            z-index: 1;
+            border: 2px solid $primary-color;
+        }
+    }
+}

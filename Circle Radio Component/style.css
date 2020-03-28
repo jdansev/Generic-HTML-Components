@@ -1,0 +1,59 @@
+/*=== Fonts ===*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+/*=== Global ===*/
+html, body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1em; }
+
+/*=== Variables ===*/
+/*=== Components ===*/
+.c-radio-group {
+  margin: 20px; }
+  .c-radio-group__radio {
+    cursor: pointer;
+    display: inline-block;
+    /* Remove bottom space in display inline-block
+        https://stackoverflow.com/questions/42743942/remove-bottom-space-in-display-inline-block */
+    vertical-align: top;
+    position: relative;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    /* Hide the browser's default radio button */
+    /* Hover Styles */
+    /*
+            &:hover input~&-input {
+                border: 2px solid $primary-color-hover;
+            }
+        */ }
+    .c-radio-group__radio input {
+      cursor: pointer;
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0; }
+    .c-radio-group__radio-label {
+      font-size: 18px; }
+    .c-radio-group__radio-input {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      color: dimgray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      transition: 0.2s border, 0.2s color; }
+    input:checked ~ .c-radio-group__radio-input {
+      color: #9aecdb;
+      border: 2px solid #9aecdb;
+      transition: 0.2s border, 0.2s color; }

@@ -1,0 +1,59 @@
+/*=== Fonts ===*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+/*=== Global ===*/
+html, body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1em; }
+
+/*=== Components ===*/
+.c-carousel {
+  display: inline-block;
+  position: relative;
+  width: 800px;
+  height: 500px;
+  padding-bottom: 50px; }
+  .c-carousel__slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; }
+    .c-carousel__slider img {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      object-position: center; }
+  .c-carousel__nav-dots-container {
+    display: inline-block; }
+  .c-carousel__navigation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  .c-carousel__nav-arrow-container {
+    outline: none;
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+    color: gray;
+    font-size: 28px;
+    background: none;
+    border: 1px solid #000000; }
+  .c-carousel__nav-arrow-container:hover {
+    cursor: pointer; }
+  .c-carousel .slick-dots {
+    position: relative;
+    bottom: 0; }
+    .c-carousel .slick-dots li {
+      margin: 0 -4px; }
+    .c-carousel .slick-dots button:before {
+      font-size: 20px !important;
+      color: gray !important; }
+    .c-carousel .slick-dots .slick-active button:before {
+      color: dimgray !important; }

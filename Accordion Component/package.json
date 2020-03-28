@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "concurrently": "^5.1.0",
+    "node-sass": "^4.13.1"
+  },
+  "scripts": {
+    "start": "yarn concurrently --kill-others \"yarn run scss:watch\" \"yarn run live-server\"",
+    "live-server": "yarn browser-sync -s -f . --port 9000",
+    "scss:compile": "yarn node-sass style.scss style.css",
+    "scss:watch": "yarn run scss:compile && yarn node-sass -w style.scss style.css"
+  }
+}

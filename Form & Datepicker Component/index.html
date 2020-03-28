@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Form & Datepicker Component</title>
+
+        <!-- DatePicker -->
+        <link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <section class="c-booking-enquiry">
+            <form class="c-booking-enquiry__form" data-booking-enquiry-form >
+                <div class="c-booking-enquiry__form-row">
+
+                    <!-- Arrival Date -->
+                    <div class="c-booking-enquiry__form-row-field">
+                        <label class="c-booking-enquiry__form-label" for="">Arrival Date</label>
+                        <input class="c-booking-enquiry__form-input" data-date-picker-arrival />
+                    </div>
+
+                    <!-- Departure Date -->
+                    <div class="c-booking-enquiry__form-row-field">
+                        <label class="c-booking-enquiry__form-label">Departure Date</label>
+                        <input class="c-booking-enquiry__form-input" data-date-picker-departure disabled />
+                    </div>
+
+                    <div class="c-booking-enquiry__form-row-field">
+                        <label class="c-booking-enquiry__form-label">Guests</label>
+
+                        <!-- Number of Guests -->
+                        <div class="o-radio-group">
+                            <label class="o-radio-group__radio">
+                                <input type="radio" name="radio" value="1"  data-guests-radio checked >
+                                <div class="o-radio-group__radio-input">
+                                    <span class="o-radio-group__radio-label">1</span>
+                                </div>
+                            </label>
+
+                            <label class="o-radio-group__radio">
+                                <input type="radio" name="radio" value="2" data-guests-radio >
+                                <div class="o-radio-group__radio-input">
+                                    <span class="o-radio-group__radio-label">2</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- First Name -->
+                <div class="c-booking-enquiry__form-field">
+                    <input class="c-booking-enquiry__form-input" type="text" name="first_name" placeholder="First Name">
+                </div>
+
+                <!-- Last Name -->
+                <div class="c-booking-enquiry__form-field">
+                    <input class="c-booking-enquiry__form-input" type="text" name="last_name" placeholder="Last Name">
+                </div>
+
+                <!-- Email -->
+                <div class="c-booking-enquiry__form-field">
+                    <input class="c-booking-enquiry__form-input" type="text" name="email" placeholder="Email">
+                </div>
+
+                <!-- Phone -->
+                <div class="c-booking-enquiry__form-field">
+                    <input class="c-booking-enquiry__form-input" type="text" name="phone" placeholder="Phone">
+                </div>
+
+                <!-- Notes -->
+                <div class="c-booking-enquiry__form-field">
+                    <textarea class="c-booking-enquiry__form-input c-booking-enquiry__form-textarea" type="text" name="notes" placeholder="Notes" rows="5" ></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button class="o-button c-booking-enquiry__form-submit" type="submit">Submit enquiry</button>
+
+            </form>
+        </section>
+
+
+        <!-- jQuery -->
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
+        
+        <!-- JS-Datepicker -->
+        <script src="https://unpkg.com/js-datepicker"></script>
+
+        <script src="script.js" type="text/javascript"></script>
+        
+    </body>
+</html>
