@@ -12,3 +12,7 @@ Component list:
 * Popup
 * Carousel
 * New Component
+
+### Usage
+In the component's directory run:
+`yarn install && yarn start`
