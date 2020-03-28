@@ -1,5 +1,5 @@
 # Generic HTML Components
-A collection of HTML components that have been stripped down so they can easily be customised for website builds.
+A collection of stripped-down HTML components that can easily be customised for different website builds.
 
 ### Component list
 * Accordion
