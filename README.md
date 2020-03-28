@@ -15,4 +15,6 @@ A collection of stripped-down HTML components that can easily be customised for 
 
 ### Usage
 In the component's directory run:
-`yarn install && yarn start`
+```
+yarn install && yarn start
+```
