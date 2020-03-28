@@ -1,7 +1,7 @@
 # Generic HTML Components
 A collection of HTML components that have been stripped down so they can easily be customised for website builds.
 
-Component list:
+### Component list
 * Accordion
 * Box Radio
 * Circle Radio
