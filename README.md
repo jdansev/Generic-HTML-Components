@@ -14,7 +14,4 @@ A collection of stripped-down HTML components that can easily be customised for 
 * New Component
 
 ### Usage
-In the component's directory run:
-```
-yarn install && yarn start
-```
+In the component's directory run: `yarn install && yarn start`
