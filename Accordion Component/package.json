@@ -2,7 +2,7 @@
   "dependencies": {
     "browser-sync": "^2.26.7",
     "concurrently": "^5.1.0",
-    "node-sass": "^4.13.1"
+    "node-sass": "^7.0.0"
   },
   "scripts": {
     "start": "yarn concurrently --kill-others \"yarn run scss:watch\" \"yarn run live-server\"",
